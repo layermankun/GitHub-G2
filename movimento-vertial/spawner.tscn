@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dcheyhlcbnwh5"]
+
+[ext_resource type="Script" uid="uid://c6ytvvbgfymys" path="res://spawner.gd" id="1_yp5lu"]
+
+[node name="spawner" type="Node2D" unique_id=1098993895]
+script = ExtResource("1_yp5lu")
+
+[node name="Timer" type="Timer" parent="." unique_id=1669838414]
+wait_time = 5.0
+autostart = true
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1120598668]
+
+[node name="Marker2D2" type="Marker2D" parent="." unique_id=937215013]
+position = Vector2(0, 70)
+
+[node name="Marker2D3" type="Marker2D" parent="." unique_id=552782261]
+position = Vector2(0, -70)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

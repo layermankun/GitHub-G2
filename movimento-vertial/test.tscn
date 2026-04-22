@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d0fiotimi8dxx"]
+
+[ext_resource type="Script" uid="uid://ctl34i5mquerc" path="res://test.gd" id="1_8uh7m"]
+[ext_resource type="PackedScene" uid="uid://ofdii1g70i6" path="res://bott.tscn" id="1_37kl0"]
+
+[node name="Node2D" type="Node2D" unique_id=356718810]
+script = ExtResource("1_8uh7m")
+
+[node name="Button" parent="." unique_id=356644095 instance=ExtResource("1_37kl0")]
+offset_left = 204.0
+offset_top = 120.0
+offset_right = 293.0
+offset_bottom = 165.0
+text = "oi
+"
