@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b0cmyj2qi6btq"]
+
+[ext_resource type="PackedScene" uid="uid://dlswbyoexm4km" path="res://cenas/espinho_teto.tscn" id="1_hcy3y"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_5q0sd"]
+scenes/1/scene = ExtResource("1_hcy3y")
+
+[sub_resource type="TileSet" id="TileSet_4k3aj"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetScenesCollectionSource_5q0sd")
+
+[node name="tileSpike" type="TileMapLayer" unique_id=226901298]
+tile_set = SubResource("TileSet_4k3aj")

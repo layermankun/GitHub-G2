@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c27b742o4idt5"]
+
+[ext_resource type="PackedScene" uid="uid://ca5yjr8uicn6s" path="res://coin.tscn" id="1_ymw0n"]
+[ext_resource type="PackedScene" uid="uid://dlswbyoexm4km" path="res://espinho_teto.tscn" id="2_gvbww"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_gvbww"]
+scenes/1/scene = ExtResource("1_ymw0n")
+scenes/2/scene = ExtResource("2_gvbww")
+
+[sub_resource type="TileSet" id="TileSet_r2lti"]
+sources/0 = SubResource("TileSetScenesCollectionSource_gvbww")
+
+[node name="TileMapLayer" type="TileMapLayer" unique_id=1164628668]
+tile_set = SubResource("TileSet_r2lti")

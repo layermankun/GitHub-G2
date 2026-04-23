@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dlswbyoexm4km"]
+
+[ext_resource type="Script" uid="uid://50ca3ui7kwcn" path="res://scripts/espinho_teto.gd" id="1_b0xkx"]
+[ext_resource type="Texture2D" uid="uid://c5q1st668gp4d" path="res://images/floorb_1.png" id="2_dwa5k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4yyg"]
+size = Vector2(7, 32)
+
+[node name="espinho_teto" type="Area2D" unique_id=614981345]
+scale = Vector2(4, 4)
+script = ExtResource("1_b0xkx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2069639654]
+rotation = -3.1415925
+texture = ExtResource("2_dwa5k")
+region_enabled = true
+region_rect = Rect2(144.5471, 47.77422, 15.062546, 32.732075)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=938900236]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_p4yyg")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

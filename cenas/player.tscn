@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://dnhq7dcf4kbb1"]
+
+[ext_resource type="Script" uid="uid://bv3mell0o5hlp" path="res://scripts/player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dvbg6ccswey6t" path="res://images/SLIMER/slimer hitting straight da jersey method1.png" id="2_n7ghd"]
+[ext_resource type="Texture2D" uid="uid://b24ikoyx0emk0" path="res://images/jump/FALL1.png" id="2_pylmc"]
+[ext_resource type="Texture2D" uid="uid://cnr0aejpsiplq" path="res://images/power lick/lick1.png" id="2_qwrs5"]
+[ext_resource type="Texture2D" uid="uid://b8accc16tcnen" path="res://images/SLIMER/slimer hitting straight da jersey method2.png" id="3_nvl01"]
+[ext_resource type="Texture2D" uid="uid://42e3wx5l2it5" path="res://images/jump/FALL2.png" id="3_pbfsw"]
+[ext_resource type="Texture2D" uid="uid://diobguuob0i2d" path="res://images/power lick/lick2.png" id="3_rmatm"]
+[ext_resource type="Texture2D" uid="uid://b4li886t8tmog" path="res://images/power lick/lick3.png" id="4_4coxd"]
+[ext_resource type="Texture2D" uid="uid://d3feuynj23n0k" path="res://images/jump/FALL3.png" id="4_5tmop"]
+[ext_resource type="Texture2D" uid="uid://7fffybf6fd47" path="res://images/SLIMER/slimer hitting straight da jersey method3.png" id="4_ivps1"]
+[ext_resource type="Texture2D" uid="uid://djl2cqj6jdl6s" path="res://images/jump/jump1.png" id="5_7ahtn"]
+[ext_resource type="Texture2D" uid="uid://bwti5ifpki2p0" path="res://images/SLIMER/slimer hitting straight da jersey method4.png" id="5_urp6f"]
+[ext_resource type="Texture2D" uid="uid://bt0r5u2xaqjtc" path="res://images/power lick/lick4.png" id="5_yrlys"]
+[ext_resource type="Texture2D" uid="uid://cywocoechpwd3" path="res://images/power lick/lick5.png" id="6_0qyyh"]
+[ext_resource type="Texture2D" uid="uid://6a3hgt0okvf8" path="res://images/jump/jump2.png" id="6_7lmhl"]
+[ext_resource type="Texture2D" uid="uid://b6fhwafcdgyho" path="res://images/SLIMER/slimer hitting straight da jersey method5.png" id="6_bwjto"]
+[ext_resource type="Texture2D" uid="uid://cq0wh2li5cb32" path="res://images/power lick/lick6.png" id="7_3kkam"]
+[ext_resource type="Texture2D" uid="uid://bho2u6ubl3j1g" path="res://images/SLIMER/slimer hitting straight da jersey method6.png" id="7_606se"]
+[ext_resource type="Texture2D" uid="uid://bwfprw0rhsxe5" path="res://images/jump/jump3.png" id="7_dx0e4"]
+[ext_resource type="Texture2D" uid="uid://dqwvdtuojje0y" path="res://images/power lick/lick7.png" id="8_iqemb"]
+[ext_resource type="Texture2D" uid="uid://y00r0b452pan" path="res://images/jump/jump4.png" id="8_jm5j8"]
+[ext_resource type="Texture2D" uid="uid://bfr6p86wbp76w" path="res://images/SLIMER/slimer hitting straight da jersey method7.png" id="8_u1c27"]
+[ext_resource type="Texture2D" uid="uid://dnjjevf153acg" path="res://images/jump/jump5.png" id="9_7hik5"]
+[ext_resource type="Texture2D" uid="uid://lyi4jpdk4phe" path="res://images/power lick/lick8.png" id="9_of225"]
+[ext_resource type="Texture2D" uid="uid://cic3fadqsay6r" path="res://images/SLIMER/slimer hitting straight da jersey method8.png" id="9_op7ga"]
+[ext_resource type="Texture2D" uid="uid://buxhok83rfspr" path="res://images/SLIMER/slimer hitting straight da jersey method9.png" id="10_q13i1"]
+[ext_resource type="Texture2D" uid="uid://c5hdw7lcbdwh2" path="res://images/jump/jump6.png" id="10_qtqh7"]
+[ext_resource type="Script" uid="uid://cp5rqbtrbkjik" path="res://cenas/atack_range.gd" id="28_qwrs5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5tmop"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qwrs5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rmatm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4coxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yrlys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0qyyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3kkam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_iqemb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_of225")
+}],
+"loop": false,
+"name": &"atack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pylmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pbfsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5tmop")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_7ahtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dx0e4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jm5j8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7lmhl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7hik5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qtqh7")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_n7ghd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nvl01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ivps1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_urp6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bwjto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_606se")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_u1c27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_op7ga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_q13i1")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sh265"]
+radius = 60.0
+height = 120.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o3f53"]
+radius = 22.0
+height = 180.0
+
+[node name="player" type="CharacterBody2D" unique_id=886311044]
+collision_layer = 3
+script = ExtResource("1_4flbx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1358115861]
+texture_filter = 1
+position = Vector2(4, -10)
+scale = Vector2(4.5, 4.5)
+sprite_frames = SubResource("SpriteFrames_5tmop")
+animation = &"run"
+autoplay = "run"
+frame = 5
+frame_progress = 0.36110052
+
+[node name="player_shape" type="CollisionShape2D" parent="." unique_id=1096000216]
+position = Vector2(-1, -1)
+shape = SubResource("CapsuleShape2D_sh265")
+
+[node name="atack_range" type="Area2D" parent="." unique_id=1383622752]
+script = ExtResource("28_qwrs5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="atack_range" unique_id=2075039594]
+position = Vector2(0, 86)
+rotation = 3.1415927
+shape = SubResource("CapsuleShape2D_o3f53")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
+[connection signal="area_entered" from="atack_range" to="atack_range" method="_on_area_entered"]
